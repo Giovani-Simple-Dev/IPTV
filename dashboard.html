@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTV Player</title>
+<style>
+    /* Resetando algumas propriedades padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Título */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Destacar nome */
+#nomeSetado {
+    color: #ff6600;
+}
+
+/* Lista de filmes */
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Links dos filmes */
+.movies a {
+    display: block;
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: calc(33.333% - 30px); /* 3 colunas em telas maiores */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.movies a:hover {
+    background-color: #ff6600;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade: ajustando para telas pequenas */
+@media (max-width: 768px) {
+    .movies a {
+        width: calc(50% - 30px); /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .movies a {
+        width: 100%; /* 1 coluna em telas pequenas */
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seja bem vindo (a) <span id="nomeSetado"></span> este é seu IPTV personalizado</h1>
+        <div class="movies">
+            <a href="/movies/branquelas.html">
+                <h3>As Branquelas</h3>
+            </a>
+            <a href="/movies/oca.html">
+                <h3>O Castelo Animado</h3>
+            </a>
+            <a href="/movies/gg.html">
+                <h3>Gente Grande</h3>
+            </a>
+            <a href="/movies/gg2.html">
+                <h3>Gente Grande 2</h3>
+            </a>
+            <a href="/movies/vf1.html">
+                Velozes e Furiosos 1
+            </a>
+            <a href="/movies/vf2.html">
+                Velozes e Furiosos 2
+            </a>
+            <a href="/movies/vf3.html">
+                Velozes e Furiosos 3
+            </a>
+            <a href="/movies/vf4.html">
+                Velozes e Furiosos 4
+            </a>
+            <a href="/movies/vf5.html">
+                Velozes e Furiosos 5
+            </a>
+            <a href="/movies/vf6.html">
+                Velozes e Furiosos 6
+            </a>
+            <a href="/movies/vf7.html">
+                Velozes e Furiosos 7
+            </a>
+            <a href="/movies/vf8.html">
+                Velozes e Furiosos 8
+            </a>
+            <a href="/movies/vf9.html">
+                Velozes e Furiosos 9
+            </a>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
